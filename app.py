@@ -14,7 +14,7 @@ def login():
         usuario = request.form.get('username')
         clave = request.form.get('password')
         # Validación simulada:
-        if usuario == 'admin' and clave == '1234':
+        if usuario == 'ariel' and clave == '13579':
             session['usuario'] = usuario
             flash(f'Bienvenido, {usuario}', 'success')
             return redirect(url_for('home'))
